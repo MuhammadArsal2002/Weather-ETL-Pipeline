@@ -91,8 +91,8 @@ Spark reads, cleans, and writes to MySQL every hour
 Repeat automatically every hour ♻️
 
 **Data Pipeline Details
-Data Source
-**
+Data Source**
+
 API: Open-Meteo — free, no API key required
 Location: Berlin, Germany (lat: 52.52, lon: 13.41)
 Forecast window: Today + 14 days
@@ -110,8 +110,8 @@ Remove duplicates by timestamp
 Sanity range checks (e.g. temperature between -80°C and 60°C)
 Fill non-critical NULLs with 0.0
 
-**Notes
-**
+**Notes**
+
 Spark and the Kafka producer run concurrently using Python threading
 INSERT IGNORE is used in MySQL to prevent duplicate records
 Checkpointing is enabled for Spark fault tolerance
