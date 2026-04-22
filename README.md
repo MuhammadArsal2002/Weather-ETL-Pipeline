@@ -61,16 +61,21 @@ MySQL running on localhost:3307
 JDK 17
 
 **1. Install Python dependencies**
+
 bashpip install requests kafka-python pyspark pymysql pandas
 
 **2. Start Kafka**
+
 **Start Zookeeper**
+
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 
 **Start Kafka broker**
+
 bin\windows\kafka-server-start.bat config\server.properties
 
 **3. Set environment variables**
+
 Create a .env file or set these variables:
 MYSQL_HOST= HOST
 MYSQL_PORT= 3307
@@ -79,6 +84,7 @@ MYSQL_USER=  root
 MYSQL_PASS=  your_password
 
 **4. Run the ETL pipeline**
+
 bashpython etl/EXTRACT.py
 
 **The pipeline will:**
