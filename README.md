@@ -2,6 +2,7 @@
 
 **Overview:**
 A real-time weather data pipeline that automatically fetches 14-day hourly forecast data every hour, processes and cleans it using Apache Spark, stores it in MySQL, and visualizes it in a live Power BI dashboard.
+
 📊 Dashboard Preview
 <img width="1487" height="838" alt="Screenshot 2026-04-22 062508" src="https://github.com/user-attachments/assets/1cdf9d01-25d8-4e0c-90cc-201e5d023bbc" />
 
