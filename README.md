@@ -64,10 +64,10 @@ JDK 17
 bashpip install requests kafka-python pyspark pymysql pandas
 
 **2. Start Kafka**
-bash# Start Zookeeper
+**Start Zookeeper**
 bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 
-# Start Kafka broker
+**Start Kafka broker**
 bin\windows\kafka-server-start.bat config\server.properties
 
 **3. Set environment variables**
