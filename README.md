@@ -90,19 +90,19 @@ Send records to Kafka topic weather_raw_data
 Spark reads, cleans, and writes to MySQL every hour
 Repeat automatically every hour ♻️
 
-**Data Pipeline Details
-Data Source**
+**Data Pipeline Details**
+**Data Source:**
 
 API: Open-Meteo — free, no API key required
 Location: Berlin, Germany (lat: 52.52, lon: 13.41)
 Forecast window: Today + 14 days
 Refresh rate: Every 1 hour
 
-**Fields collected (40+ parameters)**
+**Fields collected (40+ parameters):**
 Temperature, Humidity, Rain, Snowfall, Wind Speed (10m/80m/120m/180m), Wind Direction, Cloud Cover (Low/Mid/High), Visibility, Soil Temperature, Soil Moisture, Pressure, Dew Point, Evapotranspiration, and more.
 
 
-**Data Cleaning (Spark)**
+**Data Cleaning (Spark):**
 
 Convert timestamps to proper format
 Drop rows with NULL critical fields
@@ -110,7 +110,7 @@ Remove duplicates by timestamp
 Sanity range checks (e.g. temperature between -80°C and 60°C)
 Fill non-critical NULLs with 0.0
 
-**Notes**
+**Notes:**
 
 Spark and the Kafka producer run concurrently using Python threading
 INSERT IGNORE is used in MySQL to prevent duplicate records
