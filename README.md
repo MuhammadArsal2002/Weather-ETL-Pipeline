@@ -52,9 +52,7 @@ weather-etl-pipeline/
 └── README.md
 
 
-**
-How to Run
-Prerequisites**
+**How to Run Prerequisites**
 
 Python 3.x
 Apache Kafka running on localhost:9092
